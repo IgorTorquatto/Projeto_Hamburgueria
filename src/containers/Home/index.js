@@ -3,8 +3,16 @@ import { Container,TopContent,MediumContent,Img,Input,InputLabel } from './style
 import Title from '../../components/Title'
 import Button from '../../components/Button'
 import Logo from '../../assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate()
+
+  function newRequest(){
+      navigate("/pedidos")
+  }
+  
   return (
     <>
       <Container>
@@ -22,7 +30,7 @@ function Home() {
           <Input placeholder='Nome'/>
         </MediumContent>
 
-        <Button isHome={true}>Novo Pedido</Button>
+        <Button isHome={true} onClick={newRequest}>Novo Pedido</Button>
 
       </Container>
     </>
