@@ -12,12 +12,36 @@ export const Order = styled.div`
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 14px;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
 
-  img {
+
+  p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+
+    &:first-child{
+      order: 1;
+    }
+
+    &:nth-child(2){
+      order: 3;
+      font-weight: 700;
+    }
+  }
+
+  img{
+    order: 2;
     width: 24px;
     height: 28px;
-    align-self: center;
-    align-content: end;
+    margin-left: auto;
+
+    &:hover{
+      transform: scale(1.3);
+      cursor: pointer;
+    }
   }
 `;

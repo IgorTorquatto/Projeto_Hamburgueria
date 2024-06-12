@@ -23,7 +23,10 @@ function Pedidos() {
         </TopContent>
 
         <MediumContent>
-            <Order> <img src={Trash}/></Order>
+            <Order> 
+              <p>Coca Cola</p>
+              <p>Júnior</p>
+              <img src={Trash}/></Order>
         </MediumContent>
 
         <Button onClick={goBack}>Voltar</Button>
