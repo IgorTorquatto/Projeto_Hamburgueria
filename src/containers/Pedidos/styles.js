@@ -15,6 +15,7 @@ export const Order = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 
 
   p{
@@ -33,11 +34,13 @@ export const Order = styled.div`
     }
   }
 
-  img{
+  button{
     order: 2;
     width: 24px;
     height: 28px;
     margin-left: auto;
+    background-color: transparent;
+    border: none;
 
     &:hover{
       transform: scale(1.3);
