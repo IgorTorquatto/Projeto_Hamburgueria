@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Instruções para Executar a Aplicação "Projeto_Hamburgueria"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requisitos
+Certifique-se de ter os seguintes softwares instalados em sua máquina:
+- Node.js
+- Yarn
+- Git
 
-## Available Scripts
+## Passos para Executar a Aplicação
 
-In the project directory, you can run:
+### 1. Clonar o Repositório do Front-End
 
-### `yarn start`
+1. Abra o terminal ou o CMD.
+2. Clone o repositório do front-end:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```sh
+    git clone https://github.com/IgorTorquatto/Projeto_Hamburgueria.git
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Navegue até o diretório do projeto:
 
-### `yarn test`
+    ```sh
+    cd Projeto_Hamburgueria
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Instale as dependências usando o Yarn:
 
-### `yarn build`
+    ```sh
+    yarn
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Inicie a aplicação front-end:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```sh
+    yarn start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Clonar o Repositório do Back-End
 
-### `yarn eject`
+1. Abra um novo terminal ou CMD.
+2. Clone o repositório do back-end:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```sh
+    git clone https://github.com/IgorTorquatto/Projeto_Hamburgueria-Back-End.git
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Navegue até o diretório do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```sh
+    cd Projeto_Hamburgueria-Back-End
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Instale as dependências usando o npm:
 
-## Learn More
+    ```sh
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Inicie a aplicação back-end:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```sh
+    npm run dev
+    ```
 
-### Code Splitting
+## Conclusão
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Agora a aplicação front-end estará rodando em um servidor local (`http://localhost:3000`) e a aplicação back-end estará rodando em outro servidor local (`http://localhost:3001`). Acesse o endereço do front-end no seu navegador para utilizar a aplicação.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se encontrar algum problema, verifique as mensagens de erro no terminal e certifique-se de que todas as dependências estão corretamente instaladas.
