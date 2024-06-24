@@ -29,6 +29,15 @@ function Pedidos() {
     navigate(-1);
   }
 
+  async function deleteOrder(orderId){
+    // we are saying that we want to create a new list using the filter function that will only contain elements whose id is not equal to the id of the element we want to delete
+    const newOrders = orders.filter(order => order.id !== orderId)
+    setOrders(newOrders)
+
+    //we are sending the command to delete the order with this id
+    await axios.delete(`http://localhost:3001/orders/${orderId}`)
+  }
+
   return (
     <>
       <Container>
@@ -43,7 +52,7 @@ function Pedidos() {
               <Order>
                 <p>{order.order}</p>
                 <p>{order.name}</p>
-                <button ><img alt="image-trash" src={Trash} /></button>
+                <button onClick={ ()=> deleteOrder(order.id)} ><img alt="image-trash" src={Trash} /></button>
               </Order>
             ))
           }
